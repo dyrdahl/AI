@@ -22,7 +22,7 @@ def compare_adjacent_circles(circle_a, circle_b):
     rad_sum = r1 + r2
     
     # Check if circles overlap
-    if abs_diff < distance < rad_sum:
+    if abs_diff < distance <= rad_sum:
         return True
     
     return False
@@ -54,6 +54,7 @@ if __name__ == '__main__':
     circle4 = [(0.5, 0.5, 0.5), (1.5, 1.5, 1.1), (0.7, 0.7, 0.4), (4, 4, 0.7), (3, 5, 0.8), (3.7, 2, 1.6)]  # True
     circle5 = [(3.5, 3.5, 1), (4, 4, 3), (3, 4, 2), (4, 4, 2)]  # False
     circle6 = [(2, 2.5, 1.8), (2, 2.5, 1), (3.4, 2.3, 0.2)]  # False
+    circle7 = [(1, 1, 1), (3, 1, 1)]  # False
 
     for i in range(1, 2):
         print(i)
@@ -63,7 +64,8 @@ if __name__ == '__main__':
         print(f"Circle 4: {circle_struct(circle4)}")     # True
         print(f"Circle 5: {circle_struct(circle5)}")     # False
         print(f"Circle 6: {circle_struct(circle6)}")     # False
-        
+        print(f"Circle 7: {circle_struct(circle7)}")     # False
+
 
     
     toc = time.perf_counter()
