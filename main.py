@@ -4,6 +4,7 @@
 # 9/12/2024
 
 import math
+from decimal import *
 
 def compare_adjacent_circles(circle_a, circle_b):
     x1, y1, r1 = circle_a
