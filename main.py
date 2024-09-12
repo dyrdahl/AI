@@ -1,6 +1,9 @@
+# CS 471 AI - Assignment 1
+# Detect if circles are in clusters (Overlapping or Tangent)
+# By: Shane Dyrdahl
+# 9/12/2024
+
 import math
-from decimal import *
-import time   # DEBUG
 
 def compare_adjacent_circles(circle_a, circle_b):
     x1, y1, r1 = circle_a
