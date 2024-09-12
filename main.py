@@ -5,19 +5,18 @@ import time   # DEBUG
 def compare_adjacent_circles(circle_a, circle_b):
     x1, y1, r1 = circle_a
     x2, y2, r2 = circle_b
-    # print(f"x1: {x1}, y1: {y1}, r1: {r1}  || x2: {x2}, y2: {y2}, r2: {r2}")  # Debug
     
-    # # Convert all coordinates and radii to Decimal using string representation for exact precision due to Floating Point Arithmetic inaccurate
+    # Also, we can convert all coordinates and radii to Decimal using string representation
+    # for exact precision due to Floating Point Arithmetic inaccurate
     # x1, y1, r1 = Decimal(str(x1)), Decimal(str(y1)), Decimal(str(r1))
     # x2, y2, r2 = Decimal(str(x2)), Decimal(str(y2)), Decimal(str(r2))
     
     # Distance between the two circles centers
     distance = math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
-
+    
     # absolute difference
     abs_diff = abs(r1 - r2)
     
-    # print(f"abs_diff: {abs_diff}")
     # Sum of radii
     rad_sum = r1 + r2
     
@@ -27,45 +26,63 @@ def compare_adjacent_circles(circle_a, circle_b):
     
     return False
 
+def dfs(node, graph, visited):
+    visited.add(node)
+    
+    for adjacent in graph[node]:
+        if adjacent not in visited:
+            dfs(adjacent, graph, visited)
+            
 def circle_struct(circles):
     n = len(circles)
-    graph = {i: [] for i in range(n)}  # Create an empty adjacency list
-
-    # Build the graph: connect nodes (circles) if they overlap
-    for i in range(n):
-        for j in range(i + 1, n):
-            if compare_adjacent_circles(circles[i], circles[j]):
-                graph[i].append(j)
-                graph[j].append(i)
+    graph = {x: [] for x in range(n)}  # Create an empty adjacency list
     
-    # Check if any circle has no adjacent nodes, return False if found
-    for circle, adjacent_nodes in graph.items():
-        if not adjacent_nodes:
-            # print(f"Circle {circle} has no adjacent nodes.")
-            return False
-        
+    # Build the graph: connect nodes (circles) if they overlap
+    for k in range(n):
+        for j in range(k + 1, n):
+            if compare_adjacent_circles(circles[k], circles[j]):
+                graph[k].append(j)
+                graph[j].append(k)
+    
+    # Create a set of all visited nodes to check for non-clustered circles or disconnected clusters
+    visited = set()
+
+    # Begin a depth first search to check for clusters
+    dfs(0, graph, visited)
+    
+    # Less nodes visited than total nodes = some circles not clustered (or multiple disconnected clusters)
+    if len(visited) < n:
+        return False
+    
     return True
 
+
 if __name__ == '__main__':
-    tic = time.perf_counter()
-    circle1 = [(1, 3, 0.7), (2, 3, 0.4), (3, 3, 0.9)]  # True
-    circle2 = [(1.5, 1.5, 1.3), (4, 4, 0.7)]  # False
-    circle3 = [(0.5, 0.5, 0.5), (1.5, 1.5, 1.1), (0.7, 0.7, 0.4), (4, 4, 0.7)]  # False
-    circle4 = [(0.5, 0.5, 0.5), (1.5, 1.5, 1.1), (0.7, 0.7, 0.4), (4, 4, 0.7), (3, 5, 0.8), (3.7, 2, 1.6)]  # True
-    circle5 = [(3.5, 3.5, 1), (4, 4, 3), (3, 4, 2), (4, 4, 2)]  # False
-    circle6 = [(2, 2.5, 1.8), (2, 2.5, 1), (3.4, 2.3, 0.2)]  # False
-    circle7 = [(1, 1, 1), (3, 1, 1), (3, 3, 1)]  # True
+    # Test Case - 1 [TRUE]
+    case1 = [(1, 3, 0.7), (2, 3, 0.4), (3, 3, 0.9)]
+    sol_case1 = circle_struct(case1)
+    print(f"Test Case 1:")
+    print(f"  Circles: {case1}")
+    print(f"  Output: {sol_case1}")
 
-    for i in range(1, 10000):
-        print(i)
-        print(f"Circle 1: {circle_struct(circle1)}")     # True
-        print(f"Circle 2: {circle_struct(circle2)}")     # False
-        print(f"Circle 3: {circle_struct(circle3)}")     # False
-        print(f"Circle 4: {circle_struct(circle4)}")     # True
-        print(f"Circle 5: {circle_struct(circle5)}")     # False
-        print(f"Circle 6: {circle_struct(circle6)}")     # False
-        print(f"Circle 7: {circle_struct(circle7)}")     # True
-
-    toc = time.perf_counter()
-    print(f"Program executed in: {toc - tic:0.7f} seconds")
+    # Test Case - 2 [FALSE]
+    case2 = [(1.5, 1.5, 1.3), (4, 4, 0.7)]
+    sol_case2 = circle_struct(case2)
+    print(f"\nTest Case 2:")
+    print(f"  Circles: {case2}")
+    print(f"  Output: {sol_case2}")
+    
+    # Test Case - 3 [FALSE]
+    case3 = [(0.5, 0.5, 0.5), (1.5, 1.5, 1.1), (0.7, 0.7, 0.4), (4, 4, 0.7)]
+    sol_case3 = circle_struct(case3)
+    print(f"\nTest Case 3:")
+    print(f"  Circles: {case3}")
+    print(f"  Output: {sol_case3}")
+    
+    # Test Case - 4 [TRUE]
+    case4 = [(0.5, 0.5, 0.5), (1.5, 1.5, 1.1), (0.7, 0.7, 0.4), (4, 4, 0.7), (3, 5, 0.8), (3.7, 2, 1.6)]
+    sol_case4 = circle_struct(case4)
+    print(f"\nTest Case 4:")
+    print(f"  Circles: {case4}")
+    print(f"  Output: {sol_case4}")
     
