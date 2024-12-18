@@ -1,0 +1,1239 @@
+(myenv) PS C:\pythonProject\AI\Final> python main.py
+2024-11-21 15:45:22,191 INFO worker.py:1819 -- Started a local Ray instance.
+-----> CSV Reading Time: 1.1790 seconds
+-----> Encoding Time: 17.6579 seconds
+-----> Split & SMOTE Time: 4.1959 seconds
+2024-11-21 15:45:48,881 INFO tensorboardx.py:193 -- pip install "ray[tune]" to see TensorBoard files.
+2024-11-21 15:45:48,882 WARNING callback.py:136 -- The TensorboardX logger cannot be instantiated because either TensorboardX or one of it's dependencies is not installed. Please make sure you have the latest version of TensorboardX installed: `pip install -U tensorboardx`
+╭────────────────────────────────────────────────────────────────────────────╮
+│ Configuration for experiment     train_decision_tree_2024-11-21_15-45-48   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Search algorithm                 BasicVariantGenerator                     │
+│ Scheduler                        FIFOScheduler                             │
+│ Number of trials                 9                                         │
+╰────────────────────────────────────────────────────────────────────────────╯
+
+View detailed results here: C:/Users/shane/ray_results/train_decision_tree_2024-11-21_15-45-48
+
+Trial status: 9 PENDING
+Current time: 2024-11-21 15:45:49. Total running time: 0s
+Logical resource usage: 9.0/24 CPUs, 0/1 GPUs (0.0/1.0 accelerator_type:G)
+╭────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                        status       max_depth     min_samples_split │
+├────────────────────────────────────────────────────────────────────────────────┤
+│ train_decision_tree_bc287_00000   PENDING              3                     2 │
+│ train_decision_tree_bc287_00001   PENDING              4                     2 │
+│ train_decision_tree_bc287_00002   PENDING              5                     2 │
+│ train_decision_tree_bc287_00003   PENDING              3                     3 │
+│ train_decision_tree_bc287_00004   PENDING              4                     3 │
+│ train_decision_tree_bc287_00005   PENDING              5                     3 │
+│ train_decision_tree_bc287_00006   PENDING              3                     4 │
+│ train_decision_tree_bc287_00007   PENDING              4                     4 │
+│ train_decision_tree_bc287_00008   PENDING              5                     4 │
+╰────────────────────────────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00003 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00003 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_split                                 3 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00002 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00002 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         5 │
+│ min_samples_split                                 2 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00001 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00001 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_split                                 2 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00007 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00007 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_split                                 4 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00000 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00000 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_split                                 2 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00005 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00005 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         5 │
+│ min_samples_split                                 3 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00006 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00006 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_split                                 4 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00004 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00004 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_split                                 3 │
+╰─────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00008 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00008 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         5 │
+│ min_samples_split                                 4 │
+╰─────────────────────────────────────────────────────╯
+
+Trial status: 9 RUNNING
+Current time: 2024-11-21 15:46:19. Total running time: 30s
+Logical resource usage: 9.0/24 CPUs, 0/1 GPUs (0.0/1.0 accelerator_type:G)
+╭────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                        status       max_depth     min_samples_split │
+├────────────────────────────────────────────────────────────────────────────────┤
+│ train_decision_tree_bc287_00000   RUNNING              3                     2 │
+│ train_decision_tree_bc287_00001   RUNNING              4                     2 │
+│ train_decision_tree_bc287_00002   RUNNING              5                     2 │
+│ train_decision_tree_bc287_00003   RUNNING              3                     3 │
+│ train_decision_tree_bc287_00004   RUNNING              4                     3 │
+│ train_decision_tree_bc287_00005   RUNNING              5                     3 │
+│ train_decision_tree_bc287_00006   RUNNING              3                     4 │
+│ train_decision_tree_bc287_00007   RUNNING              4                     4 │
+│ train_decision_tree_bc287_00008   RUNNING              5                     4 │
+╰────────────────────────────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00000 finished iteration 1 at 2024-11-21 15:46:28. Total running time: 39s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00000 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 33.8988 │
+│ time_total_s                                     33.8988 │
+│ training_iteration                                     1 │
+│ recall                                           0.92444 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00000 completed after 1 iterations at 2024-11-21 15:46:28. Total running time: 39s
+
+Trial train_decision_tree_bc287_00003 finished iteration 1 at 2024-11-21 15:46:28. Total running time: 39s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00003 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 34.2971 │
+│ time_total_s                                     34.2971 │
+│ training_iteration                                     1 │
+│ recall                                           0.92444 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00003 completed after 1 iterations at 2024-11-21 15:46:28. Total running time: 39s
+
+Trial train_decision_tree_bc287_00006 finished iteration 1 at 2024-11-21 15:46:28. Total running time: 39s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00006 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 34.6121 │
+│ time_total_s                                     34.6121 │
+│ training_iteration                                     1 │
+│ recall                                           0.92444 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00006 completed after 1 iterations at 2024-11-21 15:46:28. Total running time: 39s
+
+Trial train_decision_tree_bc287_00004 finished iteration 1 at 2024-11-21 15:46:37. Total running time: 49s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00004 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 43.7396 │
+│ time_total_s                                     43.7396 │
+│ training_iteration                                     1 │
+│ recall                                            0.9969 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00004 completed after 1 iterations at 2024-11-21 15:46:37. Total running time: 49s
+
+Trial train_decision_tree_bc287_00007 finished iteration 1 at 2024-11-21 15:46:38. Total running time: 49s
+╭─────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00007 result            │
+├─────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                     │
+│ time_this_iter_s                                 43.937 │
+│ time_total_s                                     43.937 │
+│ training_iteration                                    1 │
+│ recall                                           0.9969 │
+╰─────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00007 completed after 1 iterations at 2024-11-21 15:46:38. Total running time: 49s
+
+Trial train_decision_tree_bc287_00001 finished iteration 1 at 2024-11-21 15:46:38. Total running time: 49s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00001 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 44.1617 │
+│ time_total_s                                     44.1617 │
+│ training_iteration                                     1 │
+│ recall                                            0.9969 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00001 completed after 1 iterations at 2024-11-21 15:46:38. Total running time: 49s
+
+Trial train_decision_tree_bc287_00005 finished iteration 1 at 2024-11-21 15:46:45. Total running time: 56s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00005 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 51.3922 │
+│ time_total_s                                     51.3922 │
+│ training_iteration                                     1 │
+│ recall                                           0.99683 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00005 completed after 1 iterations at 2024-11-21 15:46:45. Total running time: 56s
+
+Trial train_decision_tree_bc287_00002 finished iteration 1 at 2024-11-21 15:46:45. Total running time: 56s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00002 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 51.5671 │
+│ time_total_s                                     51.5671 │
+│ training_iteration                                     1 │
+│ recall                                           0.99683 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00002 completed after 1 iterations at 2024-11-21 15:46:45. Total running time: 56s
+
+Trial train_decision_tree_bc287_00008 finished iteration 1 at 2024-11-21 15:46:45. Total running time: 57s
+╭──────────────────────────────────────────────────────────╮
+│ Trial train_decision_tree_bc287_00008 result             │
+├──────────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                      │
+│ time_this_iter_s                                 51.5084 │
+│ time_total_s                                     51.5084 │
+│ training_iteration                                     1 │
+│ recall                                           0.99683 │
+╰──────────────────────────────────────────────────────────╯
+
+Trial train_decision_tree_bc287_00008 completed after 1 iterations at 2024-11-21 15:46:45. Total running time: 57s
+2024-11-21 15:46:46,014 INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to 'C:/Users/shane/ray_results/train_decision_tree_2024-11-21_15-45-48' in 0.0135s.
+
+Trial status: 9 TERMINATED
+Current time: 2024-11-21 15:46:46. Total running time: 57s
+Logical resource usage: 1.0/24 CPUs, 0/1 GPUs (0.0/1.0 accelerator_type:G)
+Current best trial: bc287_00001 with recall=0.9968977954965397 and params={'max_depth': 4, 'min_samples_split': 2}
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                        status         max_depth     min_samples_split     iter     total time (s)     recall │
+├─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_decision_tree_bc287_00000   TERMINATED             3                     2        1            33.8988   0.924444 │
+│ train_decision_tree_bc287_00001   TERMINATED             4                     2        1            44.1617   0.996898 │
+│ train_decision_tree_bc287_00002   TERMINATED             5                     2        1            51.5671   0.996833 │
+│ train_decision_tree_bc287_00003   TERMINATED             3                     3        1            34.2971   0.924444 │
+│ train_decision_tree_bc287_00004   TERMINATED             4                     3        1            43.7396   0.996898 │
+│ train_decision_tree_bc287_00005   TERMINATED             5                     3        1            51.3922   0.996833 │
+│ train_decision_tree_bc287_00006   TERMINATED             3                     4        1            34.6121   0.924444 │
+│ train_decision_tree_bc287_00007   TERMINATED             4                     4        1            43.9371   0.996898 │
+│ train_decision_tree_bc287_00008   TERMINATED             5                     4        1            51.5084   0.996833 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+-----> Decision Tree Training Time: 57.1668 seconds
+Best Decision Tree Config: {'max_depth': 4, 'min_samples_split': 2}
+2024-11-21 15:46:46,045 WARNING callback.py:136 -- The TensorboardX logger cannot be instantiated because either TensorboardX or one of it's dependencies is not installed. Please make sure you have the latest version of TensorboardX installed: `pip install -U tensorboardx`
+╭────────────────────────────────────────────────────────────────────────────╮
+│ Configuration for experiment     train_random_forest_2024-11-21_15-46-46   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Search algorithm                 BasicVariantGenerator                     │
+│ Scheduler                        FIFOScheduler                             │
+│ Number of trials                 18                                        │
+╰────────────────────────────────────────────────────────────────────────────╯
+
+View detailed results here: C:/Users/shane/ray_results/train_random_forest_2024-11-21_15-46-46
+2024-11-21 15:46:46,080 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00000_0_max_depth=2,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,096 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00000_0_max_depth=2,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,098 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00001_1_max_depth=3,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,100 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00001_1_max_depth=3,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,102 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00002_2_max_depth=4,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,103 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00002_2_max_depth=4,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,105 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00003_3_max_depth=2,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,107 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00003_3_max_depth=2,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,109 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00004_4_max_depth=3,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,110 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00004_4_max_depth=3,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,112 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00005_5_max_depth=4,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,113 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00005_5_max_depth=4,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+2024-11-21 15:46:46,115 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00006_6_max_depth=2,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,117 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00006_6_max_depth=2,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,119 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00007_7_max_depth=3,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,120 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00007_7_max_depth=3,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,121 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00008_8_max_depth=4,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,123 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00008_8_max_depth=4,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,124 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00009_9_max_depth=2,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,125 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00009_9_max_depth=2,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,127 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00010_10_max_depth=3,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,128 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00010_10_max_depth=3,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,130 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00011_11_max_depth=4,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,131 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00011_11_max_depth=4,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:46,133 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00012_12_max_depth=2,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,134 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00012_12_max_depth=2,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,136 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00013_13_max_depth=3,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,137 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00013_13_max_depth=3,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,139 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00014_14_max_depth=4,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,140 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00014_14_max_depth=4,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,142 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00015_15_max_depth=2,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,143 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00015_15_max_depth=2,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,144 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00016_16_max_depth=3,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,145 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00016_16_max_depth=3,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,147 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00017_17_max_depth=4,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:46,149 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00017_17_max_depth=4,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+
+Trial status: 18 PENDING
+Current time: 2024-11-21 15:46:46. Total running time: 0s
+Logical resource usage: 24.0/24 CPUs, 0/1 GPUs (0.0/1.0 accelerator_type:G)
+╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                        status       n_estimators     max_depth     min_samples_leaf │
+├────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_random_forest_de3b3_00000   PENDING                10             2                    1 │
+│ train_random_forest_de3b3_00001   PENDING                10             3                    1 │
+│ train_random_forest_de3b3_00002   PENDING                10             4                    1 │
+│ train_random_forest_de3b3_00003   PENDING                10             2                    2 │
+│ train_random_forest_de3b3_00004   PENDING                10             3                    2 │
+│ train_random_forest_de3b3_00005   PENDING                10             4                    2 │
+│ train_random_forest_de3b3_00006   PENDING                25             2                    1 │
+│ train_random_forest_de3b3_00007   PENDING                25             3                    1 │
+│ train_random_forest_de3b3_00008   PENDING                25             4                    1 │
+│ train_random_forest_de3b3_00009   PENDING                25             2                    2 │
+│ train_random_forest_de3b3_00010   PENDING                25             3                    2 │
+│ train_random_forest_de3b3_00011   PENDING                25             4                    2 │
+│ train_random_forest_de3b3_00012   PENDING                50             2                    1 │
+│ train_random_forest_de3b3_00013   PENDING                50             3                    1 │
+│ train_random_forest_de3b3_00014   PENDING                50             4                    1 │
+│ train_random_forest_de3b3_00015   PENDING                50             2                    2 │
+│ train_random_forest_de3b3_00016   PENDING                50             3                    2 │
+│ train_random_forest_de3b3_00017   PENDING                50             4                    2 │
+╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Trial train_random_forest_de3b3_00000 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00000 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,828 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00000_0_max_depth=2,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00001 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00001 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,833 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00001_1_max_depth=3,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00003 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00003 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,838 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00003_3_max_depth=2,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00002 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00002 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,855 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00002_2_max_depth=4,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00006 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00006 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,900 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00006_6_max_depth=2,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00005 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00005 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,904 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00005_5_max_depth=4,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00004 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00004 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     10 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,907 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00004_4_max_depth=3,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00009 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00009 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,911 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00009_9_max_depth=2,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00008 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00008 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,921 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00008_8_max_depth=4,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00007 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00007 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,926 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00007_7_max_depth=3,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00010 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00010 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,966 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00010_10_max_depth=3,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00011 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00011 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     25 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:51,973 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00011_11_max_depth=4,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46
+2024-11-21 15:46:52,042 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00001
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=50020, ip=127.0.0.1, actor_id=a77ce2b13a63f5f6f3375a3c01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00001 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 5s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00001_1_max_depth=3,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,049 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00000
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=47308, ip=127.0.0.1, actor_id=3892a512f8aad772b486bdb701000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00000 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00000_0_max_depth=2,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,057 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00003
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=47776, ip=127.0.0.1, actor_id=094ea9b66a00e3a8d8175bfb01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00003 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00003_3_max_depth=2,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,073 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00002
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=50692, ip=127.0.0.1, actor_id=f4cbf6ce2ce4d68d961f9ead01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00002 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00002_2_max_depth=4,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,121 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00006
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=46148, ip=127.0.0.1, actor_id=5dab03be56953287af62578001000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00006 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00006_6_max_depth=2,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,127 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00009
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=46916, ip=127.0.0.1, actor_id=c7f02527bd83028f7c88b9ef01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00009 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00009_9_max_depth=2,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,134 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00004
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=43956, ip=127.0.0.1, actor_id=6fa6b2eb1d85b6ca365cefc101000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00004 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00004_4_max_depth=3,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,138 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00005
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=53316, ip=127.0.0.1, actor_id=8baebf439028b8a581c10e1301000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00005 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00005_5_max_depth=4,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,143 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00008
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=54776, ip=127.0.0.1, actor_id=78f043bdba3496fd4284b3e101000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00008 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00008_8_max_depth=4,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,148 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00007
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=17432, ip=127.0.0.1, actor_id=bb3a4a8808c696c074db035201000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00007 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00007_7_max_depth=3,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,182 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00010
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=45124, ip=127.0.0.1, actor_id=ffe88c69cd8ffcdf5c271a1701000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00010 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00010_10_max_depth=3,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:52,186 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00011
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=11456, ip=127.0.0.1, actor_id=1cb184cf8f1e3570dfcdac9f01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00011 errored after 0 iterations at 2024-11-21 15:46:52. Total running time: 6s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00011_11_max_depth=4,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt
+
+Trial train_random_forest_de3b3_00012 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00012 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,673 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00012_12_max_depth=2,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00016 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00016 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,677 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00016_16_max_depth=3,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00014 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00014 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,680 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00014_14_max_depth=4,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00015 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00015 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         2 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,683 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00015_15_max_depth=2,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00013 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00013 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         3 │
+│ min_samples_leaf                                  1 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,686 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00013_13_max_depth=3,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46
+
+Trial train_random_forest_de3b3_00017 started with configuration:
+╭─────────────────────────────────────────────────────╮
+│ Trial train_random_forest_de3b3_00017 config        │
+├─────────────────────────────────────────────────────┤
+│ max_depth                                         4 │
+│ min_samples_leaf                                  2 │
+│ n_estimators                                     50 │
+╰─────────────────────────────────────────────────────╯
+2024-11-21 15:46:57,690 WARNING trial.py:647 -- The path to the trial log directory is too long (max length: 260. Consider using `trial_dirname_creator` to shorten the path. Path: C:\Users\shane\AppData\Local\Temp\ray\session_2024-11-21_15-45-20_063110_51424\artifacts\2024-11-21_15-46-46\train_random_forest_2024-11-21_15-46-46\driver_artifacts\train_random_forest_de3b3_00017_17_max_depth=4,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46
+2024-11-21 15:46:57,891 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00015
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=51144, ip=127.0.0.1, actor_id=178710747f041b80b10dee3c01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00015 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00015_15_max_depth=2,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,896 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00016
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=51524, ip=127.0.0.1, actor_id=0d2f2237c443593e885d412301000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00016 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00016_16_max_depth=3,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,900 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00014
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=53640, ip=127.0.0.1, actor_id=3cc7803c6bf68464f81f5f2a01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00014 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00014_14_max_depth=4,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,904 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00012
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=54044, ip=127.0.0.1, actor_id=e1fb445d05d339978799a63f01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00012 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00012_12_max_depth=2,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,908 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00017
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=46924, ip=127.0.0.1, actor_id=deec5e05bb1a76891475132f01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00017 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00017_17_max_depth=4,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,913 ERROR tune_controller.py:1331 -- Trial task failed for trial train_random_forest_de3b3_00013
+Traceback (most recent call last):
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\execution\_internal\event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 2753, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\worker.py", line 904, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(NameError): ray::ImplicitFunc.train() (pid=45360, ip=127.0.0.1, actor_id=75a9ab7445f2c4e635da552c01000000, repr=train_random_forest)
+  File "python\ray\_raylet.pyx", line 1862, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 1803, in ray._raylet.execute_task.function_executor
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\_private\function_manager.py", line 696, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\air\_internal\util.py", line 104, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\util\tracing\tracing_helper.py", line 467, in _resume_span
+    return method(self, *_args, **_kwargs)
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\function_trainable.py", line 250, in _trainable_func
+    output = fn()
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\trainable\util.py", line 130, in inner
+    return trainable(config, **fn_kwargs)
+  File "C:\pythonProject\AI\Final\main.py", line 136, in train_random_forest
+    model = RandomForestClassifier(**config, random_state=42, n_jobs=-1)
+NameError: name 'RandomForestClassifier' is not defined
+
+Trial train_random_forest_de3b3_00013 errored after 0 iterations at 2024-11-21 15:46:57. Total running time: 11s
+Error file: C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00013_13_max_depth=3,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt
+2024-11-21 15:46:57,947 INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to 'C:/Users/shane/ray_results/train_random_forest_2024-11-21_15-46-46' in 0.0301s.
+
+Trial status: 18 ERROR
+Current time: 2024-11-21 15:46:57. Total running time: 11s
+Logical resource usage: 4.0/24 CPUs, 0/1 GPUs (0.0/1.0 accelerator_type:G)
+╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                        status       n_estimators     max_depth     min_samples_leaf │
+├────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_random_forest_de3b3_00000   ERROR                  10             2                    1 │
+│ train_random_forest_de3b3_00001   ERROR                  10             3                    1 │
+│ train_random_forest_de3b3_00002   ERROR                  10             4                    1 │
+│ train_random_forest_de3b3_00003   ERROR                  10             2                    2 │
+│ train_random_forest_de3b3_00004   ERROR                  10             3                    2 │
+│ train_random_forest_de3b3_00005   ERROR                  10             4                    2 │
+│ train_random_forest_de3b3_00006   ERROR                  25             2                    1 │
+│ train_random_forest_de3b3_00007   ERROR                  25             3                    1 │
+│ train_random_forest_de3b3_00008   ERROR                  25             4                    1 │
+│ train_random_forest_de3b3_00009   ERROR                  25             2                    2 │
+│ train_random_forest_de3b3_00010   ERROR                  25             3                    2 │
+│ train_random_forest_de3b3_00011   ERROR                  25             4                    2 │
+│ train_random_forest_de3b3_00012   ERROR                  50             2                    1 │
+│ train_random_forest_de3b3_00013   ERROR                  50             3                    1 │
+│ train_random_forest_de3b3_00014   ERROR                  50             4                    1 │
+│ train_random_forest_de3b3_00015   ERROR                  50             2                    2 │
+│ train_random_forest_de3b3_00016   ERROR                  50             3                    2 │
+│ train_random_forest_de3b3_00017   ERROR                  50             4                    2 │
+╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Number of errored trials: 18
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name                          # failures   error file
+
+                                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ train_random_forest_de3b3_00000              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00000_0_max_depth=2,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00001              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00001_1_max_depth=3,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00002              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00002_2_max_depth=4,min_samples_leaf=1,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00003              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00003_3_max_depth=2,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00004              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00004_4_max_depth=3,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00005              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00005_5_max_depth=4,min_samples_leaf=2,n_estimators=10_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00006              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00006_6_max_depth=2,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00007              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00007_7_max_depth=3,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00008              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00008_8_max_depth=4,min_samples_leaf=1,n_estimators=25_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00009              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00009_9_max_depth=2,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt  │
+│ train_random_forest_de3b3_00010              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00010_10_max_depth=3,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00011              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00011_11_max_depth=4,min_samples_leaf=2,n_estimators=25_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00012              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00012_12_max_depth=2,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00013              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00013_13_max_depth=3,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00014              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00014_14_max_depth=4,min_samples_leaf=1,n_estimators=50_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00015              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00015_15_max_depth=2,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00016              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00016_16_max_depth=3,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt │
+│ train_random_forest_de3b3_00017              1   C:/Users/shane/AppData/Local/Temp/ray/session_2024-11-21_15-45-20_063110_51424/artifacts/2024-11-21_15-46-46/train_random_forest_2024-11-21_15-46-46/driver_artifacts/train_random_forest_de3b3_00017_17_max_depth=4,min_samples_leaf=2,n_estimators=50_2024-11-21_15-46-46/error.txt │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Traceback (most recent call last):
+  File "C:\pythonProject\AI\Final\main.py", line 150, in <module>
+    rf_analysis = tune.run(
+  File "C:\Users\shane\AppData\Roaming\Python\Python310\site-packages\ray\tune\tune.py", line 1035, in run
+    raise TuneError("Trials did not complete", incomplete_trials)
+ray.tune.error.TuneError: ('Trials did not complete', [train_random_forest_de3b3_00000, train_random_forest_de3b3_00001, train_random_forest_de3b3_00002, train_random_forest_de3b3_00003, train_random_forest_de3b3_00004, train_random_forest_de3b3_00005, train_random_forest_de3b3_00006, train_random_forest_de3b3_00007, train_random_forest_de3b3_00008, train_random_forest_de3b3_00009, train_random_forest_de3b3_00010, train_random_forest_de3b3_00011, train_random_forest_de3b3_00012, train_random_forest_de3b3_00013, train_random_forest_de3b3_00014, train_random_forest_de3b3_00015, train_random_forest_de3b3_00016, train_random_forest_de3b3_00017])
